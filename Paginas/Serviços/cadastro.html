@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuardaTreco</title>
+
+    <link rel="icon" type="image/png" href="../../assets/car.png">
+</head>
+
+<body>
+    <a href="../../Paginas/home.html">
+        <img src="../../assets/car.png" width="20"> Nardinho Automoveis
+    </a>
+    <br>
+    <a href="index.html">
+        <i class="fa-solid fa-arrow-left"></i>
+        Serviços</a>
+
+    <form action="index.html" method="get">
+        <div>
+            <label for="campo-nome-carro">Carro</label>
+            <input type="text" id="campo-nome" minlength="3" required maxlength="20">
+        </div>
+        <label for="Modelo">Modelo:</label>
+        <select id="Modelo" name="Modelo">
+            <option value="SUV">SUV</option>
+            <option value="Hatch">Hatch</option>
+            <option value="Sedan">Sedan</option>
+
+        </select>
+        <div>
+            <label for="Serviços">Serviços:</label>
+            <select id="Serviços" name="Serviços">
+                <option value="lavaçao">Lavação</option>
+                <option value="troca-de-oleo">Troca de Oléo</option>
+                <option value="Revisão">Revisão</option>
+    
+            </select>
+        </div>
+        <div>
+            <form>
+                <label for="agendamento">Data de Disponiveis:</label>
+                <input type="date" id="agendamento" name="agendamento"
+                       min="2025-01-01" max="2025-12-31"
+                       value="2025-05-17" required>
+                <input type="submit" value="Agendar">
+              </form>
+        </div>
+        <br>
+        <button type="submit">Agendar</button>
+    </form>
+    <script src="https://kit.fontawesome.com/4607e888df.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
